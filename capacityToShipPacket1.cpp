@@ -54,19 +54,7 @@ int shipWithinDays(vector<int>& weights, int D)
         upper+=it;
     }
     int ans=INT_MAX;
-   // int i=upper;
     ans=binarySearch(weights,D,lower,upper);
-    /*while(i>=lower)
-    {
-        if(isPossibleToShip(weights,i,D)==true)
-        {
-            ans=min(ans,i);
-        }
-        else {
-            break;
-        }
-        i--;
-    }*/
     return ans;
 }
 int main()
