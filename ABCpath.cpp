@@ -77,7 +77,7 @@ int findPath(char** grid, int n, int m)
 }
 int main()
 {
-    int n,m;
+    int n,m,W,H;
     cin>>n>>m;
     char **grid= new char*[n];
     for(int i=0;i<n;i++)
@@ -85,6 +85,8 @@ int main()
         grid[i]=new char[m];
         cin>>grid[i];
     }
-    cout<<findPath(grid, m,n);
+    cin>>W>>H;
+    int ans=findPath(grid, m,n);
+    printf("Case 1: %d",ans);
 
 }
